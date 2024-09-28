@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-Laptop::Laptop(const char* n, double pr, const char* mcpu, double prcpu):cpu(mcpu,prcpu)
+Laptop::Laptop(const char* n, double pr, const char* mcpu, double prcpu, const char* mram, double prram):cpu(mcpu, prcpu), ram(mram, prram)
 {
 	name = new char[strlen(n) + 1];
 	strcpy_s(name, strlen(n) + 1, n);

@@ -24,7 +24,7 @@ class Laptop
 	/* добавляем остальные компоненты для ноутбука - указатели на объекты, для которых память выдел. в конструкторе класса Laptop 
 	*/
 public:
-	Laptop(const char* n, double pr, const char* mcpu, double prcpu);
+	Laptop(const char* n, double pr, const char* mcpu, double prcpu, const char* mram, double prram);
 	double GetPrice();
 	void Output();
 	~Laptop();
