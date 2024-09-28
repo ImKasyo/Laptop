@@ -20,4 +20,7 @@ void Ram::Output() {
 	cout << "Model:" << model << endl
 		<< "Prise:" << price << endl;
 }
+Ram::~Ram() {
+	delete[] model;
+}
 
