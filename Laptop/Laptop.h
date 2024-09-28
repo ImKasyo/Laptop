@@ -1,5 +1,6 @@
 #pragma once
 #include "Cpu.h"
+using namespace std;
 class Ram
 {
 	char* model;
