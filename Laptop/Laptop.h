@@ -10,6 +10,7 @@ public:
 	Ram(const char* m, double pr);
 	const char* GetModel();
 	double GetPrice();
+	void SetPrice(double pr);
 	void Output();
 	~Ram();
 };
