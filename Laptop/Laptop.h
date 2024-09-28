@@ -8,6 +8,10 @@ class Ram
 public:
 	Ram();
 	Ram(const char* m, double pr);
+	const char* GetModel();
+	double GetPrice();
+	void Output();
+	~Ram();
 };
 
 class Laptop
