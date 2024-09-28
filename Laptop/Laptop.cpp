@@ -13,14 +13,15 @@ Laptop::Laptop(const char* n, double pr, const char* mcpu, double prcpu):cpu(mcp
 
 double Laptop::GetPrice()
 {
-	return price + cpu.GetPrice();
+	return price + cpu.GetPrice() + ram->GetPrice() ;
 }
 
 void Laptop::Output()
 {
 	cout << "Model: " << name << endl
-		 << "Cpu: " << cpu.GetModel() << endl
-		 << "Laptop price = " << GetPrice() << " $\n";
+		<< "Cpu: " << cpu.GetModel() << endl
+		<< "Ram" << ram->GetModel() << endl
+		<< "Laptop price = " << GetPrice() << " $\n" << endl;
 }
 
 Laptop::~Laptop()
